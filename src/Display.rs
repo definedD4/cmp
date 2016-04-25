@@ -1,15 +1,15 @@
 extern crate glium;
 
-use glium::glutin::GlutinFacade;
+use glium::glutin::WindowBuilder;
 
 pub struct Display {
-	window: GlutinFacade,
+	window: WindowBuilder::Facade,
 }
 
 pub impl Display {
 	pub fn new() -> Display {
 		use glium::DisplayBuild;
-		let window = glium::glutin::WindowBuilder::new().build_glium().unwrap();
+		let window = WindowBuilder::new().build_glium().unwrap();
 		Display{window:window}
 	}
 
