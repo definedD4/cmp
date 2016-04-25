@@ -10,7 +10,7 @@ impl Display {
 		Display{window:window}
 	}
 
-	pub fn run(mut self&) {
+	pub fn run(mut &self) {
 		use glium::{DisplayBuild, Surface};
     
 	    loop {
