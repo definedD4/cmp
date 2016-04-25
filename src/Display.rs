@@ -1,10 +1,10 @@
 use glium::glutin::Window;
 
-struct Display {
+pub struct Display {
 	window: Window,
 }
 
-impl Display {
+pub impl Display {
 	pub fn new() -> Display {
 		let window = glium::glutin::WindowBuilder::new().build_glium().unwrap();
 		Display{window:window}
