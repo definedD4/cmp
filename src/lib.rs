@@ -1,4 +1,4 @@
 extern crate glium;
 
 pub mod Display;
-pub use Diplay;
+pub use Display;
