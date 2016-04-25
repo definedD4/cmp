@@ -1,3 +1,5 @@
+extern crate glium;
+
 use glium::glutin::Window;
 
 pub struct Display {
