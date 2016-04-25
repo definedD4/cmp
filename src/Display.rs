@@ -8,12 +8,13 @@ pub struct Display {
 
 pub impl Display {
 	pub fn new() -> Display {
+		use glium::DisplayBuild;
 		let window = glium::glutin::WindowBuilder::new().build_glium().unwrap();
 		Display{window:window}
 	}
 
 	pub fn run(&mut self) {
-		use glium::{DisplayBuild, Surface};
+		use glium::Surface;
     
 	    loop {
 	        let mut target = self.window.draw();
