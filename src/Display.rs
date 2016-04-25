@@ -1,9 +1,9 @@
 extern crate glium;
 
-use glium::glutin::Window;
+use glium::glutin::GlutinFacade;
 
 pub struct Display {
-	window: Window,
+	window: GlutinFacade,
 }
 
 pub impl Display {
