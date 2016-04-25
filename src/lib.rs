@@ -9,7 +9,7 @@ pub fn test_lib(){
         target.clear_color(0.0, 0.0, 1.0, 1.0);
         target.finish().unwrap();
 
-        for ev in display.poll_events() {
+        for ev in display.wait_events() {
             match ev {
                 glium::glutin::Event::Closed => return,
                 _ => ()
