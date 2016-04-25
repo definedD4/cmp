@@ -7,7 +7,7 @@ struct Display {
 impl Display {
 	pub fn new() -> Display {
 		let window = glium::glutin::WindowBuilder::new().build_glium().unwrap();
-		Display{window}
+		Display{window:window}
 	}
 
 	pub fn run(mut self&) {
